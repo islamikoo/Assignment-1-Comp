@@ -50,5 +50,20 @@ void Command::shuffleWord()
 		}
 		if(vector[2][j+1] == '\0')
 			cout << vector[2][j];
-		cout << endl;
+	cout << endl;
+}
+
+void Command::shuffleStatement()
+{
+	int i=2;
+	while(i<(counter-2))
+		{
+			cout << vector[i+1] << " " <<vector[i] << " " ;
+			i+=2;
+		}
+	if(counter%2 == 1)
+		cout << vector[i];
+	else
+		cout << vector[i+1] << " " << vector[i] << " " ;
+	cout << endl;
 }

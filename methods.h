@@ -17,5 +17,6 @@
 	void reverse();
 	void upper();
 	void shuffleWord();
+	void shuffleStatement();
 	 
  };

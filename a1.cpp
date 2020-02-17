@@ -9,7 +9,8 @@ int main(int argc , char** argv)
 	Command a(argc,argv);
 	/*a.print();
 	a.reverse();
-	a.upper();*/
-	a.shuffleWord();
+	a.upper();
+	a.shuffleWord();*/
+	a.shuffleStatement();
 	return 0;
 }

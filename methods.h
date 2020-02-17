@@ -16,5 +16,6 @@
 	void print() ;
 	void reverse();
 	void upper();
+	void shuffleWord();
 	 
  };

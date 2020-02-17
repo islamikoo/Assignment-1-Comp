@@ -14,6 +14,6 @@
 	 public:
 	 Command (int x , char** y);
 	void print() ;
-	// static void reverse();
+	void reverse();
 	 
  };

@@ -17,3 +17,10 @@ void Command::print()
 		cout << vector[i] << " " ;
 	cout << endl ;
 }
+
+void Command::reverse()
+{
+	for(int i=counter-1; i>0 ; i--)
+		cout << vector[i] << " " ;
+	cout << endl ;
+}

@@ -7,7 +7,8 @@ using namespace std;
 int main(int argc , char** argv)
 {
 	Command a(argc,argv);
-	a.print();
-	a.reverse();
+	/*a.print();
+	a.reverse();*/
+	a.upper();
 	return 0;
 }

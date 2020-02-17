@@ -1,7 +1,7 @@
-																													//  Header file of Methods
+																					//  Header file of Methods
 #include <iostream>
 #include <string>
-
+#include <algorithm>
 
 /* Definition of a class Command 
  * which will have all the methods */
@@ -15,5 +15,6 @@
 	 Command (int x , char** y);
 	void print() ;
 	void reverse();
+	void upper();
 	 
  };

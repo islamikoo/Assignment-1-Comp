@@ -18,5 +18,6 @@
 	void upper();
 	void shuffleWord();
 	void shuffleStatement();
+	void Delete();
 	 
  };

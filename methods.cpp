@@ -67,3 +67,15 @@ void Command::shuffleStatement()
 		cout << vector[i+1] << " " << vector[i] << " " ;
 	cout << endl;
 }
+
+void Command::Delete()
+{
+	int location = stoi(string(vector[2]));
+	for(int i=3; i<counter ; i++)
+	{
+		if(location+2 == i)
+			continue;
+		cout << vector[i] << " " ;
+	}
+	cout << endl ;
+}

@@ -10,7 +10,8 @@ int main(int argc , char** argv)
 	/*a.print();
 	a.reverse();
 	a.upper();
-	a.shuffleWord();*/
-	a.shuffleStatement();
+	a.shuffleWord();
+	a.shuffleStatement();*/
+	a.Delete();
 	return 0;
 }

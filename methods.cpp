@@ -79,3 +79,12 @@ void Command::Delete()
 	}
 	cout << endl ;
 }
+
+void Command::Middle()
+{
+	if(counter%2==0)
+		cout << vector[counter/2] << " " << vector[counter/2 + 1] << " " ;
+	else
+		cout << vector[counter/2 + 1] << " ";
+	cout << endl ;
+}

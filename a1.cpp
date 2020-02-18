@@ -11,7 +11,8 @@ int main(int argc , char** argv)
 	a.reverse();
 	a.upper();
 	a.shuffleWord();
-	a.shuffleStatement();*/
-	a.Delete();
+	a.shuffleStatement();
+	a.Delete();*/
+	a.Middle();
 	return 0;
 }

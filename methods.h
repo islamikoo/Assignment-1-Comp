@@ -19,5 +19,6 @@
 	void shuffleWord();
 	void shuffleStatement();
 	void Delete();
+	void Middle();
 	 
  };

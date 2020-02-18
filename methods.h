@@ -20,5 +20,6 @@
 	void shuffleStatement();
 	void Delete();
 	void Middle();
+	void Add();
 	 
  };

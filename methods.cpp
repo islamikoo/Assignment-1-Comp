@@ -88,3 +88,11 @@ void Command::Middle()
 		cout << vector[counter/2 + 1] << " ";
 	cout << endl ;
 }
+
+void Command::Add()
+{
+	int sum=0;
+	for(int i=2; i<counter ; i++)
+		sum += stoi(string(vector[i]));
+	cout << sum << endl ;
+}

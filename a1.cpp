@@ -13,7 +13,8 @@ int main(int argc , char** argv)
 	a.shuffleWord();
 	a.shuffleStatement();
 	a.Delete();
-	a.Middle();*/
-	a.Add();
+	a.Middle();
+	a.Add();*/
+	a.Random();
 	return 0;
 }

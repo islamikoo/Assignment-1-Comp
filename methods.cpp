@@ -96,3 +96,11 @@ void Command::Add()
 		sum += stoi(string(vector[i]));
 	cout << sum << endl ;
 }
+
+void Command::Random()
+{
+	srand(stoi(string(vector[5])));
+	for(int i=0; i<stoi(string(vector[2])) ; i++)
+		cout << rand() % stoi(string(vector[4] )) + stoi(string(vector[3])) << " " ;
+	cout << endl ;
+}

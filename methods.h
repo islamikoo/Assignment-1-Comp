@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <cstdlib>
 
 /* Definition of a class Command 
  * which will have all the methods */
@@ -21,5 +22,6 @@
 	void Delete();
 	void Middle();
 	void Add();
+	void Random();
 	 
  };

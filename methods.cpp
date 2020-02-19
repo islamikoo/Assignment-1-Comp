@@ -104,3 +104,28 @@ void Command::Random()
 		cout << rand() % stoi(string(vector[4] )) + stoi(string(vector[3])) << " " ;
 	cout << endl ;
 }
+
+void Command::Execute()
+{
+	string temp(vector[1]);
+	if(temp == "print")
+		this->print();
+	else if(temp == "reverse")
+		this->reverse();
+	else if(temp == "upper")
+		this->upper();
+	else if(temp == "shuffleWord")
+		this->shuffleWord();
+	else if(temp == "shuffleStatement")
+		this->shuffleStatement();
+	else if(temp == "Delete")
+		this->Delete();
+	else if(temp == "Middle")
+		this->Middle();
+	else if(temp == "Add")
+		this->Add();
+	else if(temp == "Random")
+		this->Random();
+	else
+		cout << "Undefined Command" << endl;
+}

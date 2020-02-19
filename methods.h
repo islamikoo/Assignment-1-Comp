@@ -12,16 +12,18 @@
 	 int counter;
 	 char** vector ;
 	 
+	 void print() ;
+	 void reverse();
+	 void upper();
+	 void shuffleWord();
+	 void shuffleStatement();
+	 void Delete();
+	 void Middle();
+	 void Add();
+	 void Random();
+	 
 	 public:
 	 Command (int x , char** y);
-	void print() ;
-	void reverse();
-	void upper();
-	void shuffleWord();
-	void shuffleStatement();
-	void Delete();
-	void Middle();
-	void Add();
-	void Random();
+	 void Execute();
 	 
  };

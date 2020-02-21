@@ -95,7 +95,7 @@ void Command::shuffleStatement()
 
 void Command::Delete()
 {
-	if(counter>2 && stoi(string(vector[2])) <= (counter-2))
+	if(counter>2 && stoi(string(vector[2])) < (counter-2))
 	{
 		int location = stoi(string(vector[2]));
 		for(int i=3; i<counter ; i++)
@@ -143,7 +143,7 @@ void Command::Random()
 	{
 		srand(stoi(string(vector[5])));
 		for(int i=0; i<stoi(string(vector[2])) ; i++)
-			cout << rand() % stoi(string(vector[4] )) + stoi(string(vector[3])) << " " ;
+			cout << rand() % (stoi(string(vector[4] )) - stoi(string(vector[3])) + 1) + stoi(string(vector[3])) << " " ;
 		cout << endl ;
 	}
 	else
@@ -152,25 +152,30 @@ void Command::Random()
 
 void Command::Execute()
 {
-	string temp(vector[1]);
-	if(temp == "print")
-		this->print();
-	else if(temp == "reverse")
-		this->reverse();
-	else if(temp == "upper")
-		this->upper();
-	else if(temp == "shuffleWord")
-		this->shuffleWord();
-	else if(temp == "shuffleStatement")
-		this->shuffleStatement();
-	else if(temp == "delete")
-		this->Delete();
-	else if(temp == "middle")
-		this->Middle();
-	else if(temp == "add")
-		this->Add();
-	else if(temp == "random")
-		this->Random();
-	else
-		cout << "Undefined Command" << endl;
+	if(counter>1)
+	{
+		string temp(vector[1]);
+		if(temp == "print")
+			this->print();
+		else if(temp == "reverse")
+			this->reverse();
+		else if(temp == "upper")
+			this->upper();
+		else if(temp == "shuffleWord")
+			this->shuffleWord();
+		else if(temp == "shuffleStatement")
+			this->shuffleStatement();
+		else if(temp == "delete")
+			this->Delete();
+		else if(temp == "middle")
+			this->Middle();
+		else if(temp == "add")
+			this->Add();
+		else if(temp == "random")
+			this->Random();
+		else
+			cout << "Undefined Command" << endl;
+	}
+	else 
+		cout << "Incorrect Number of Arguments" << endl; 
 }

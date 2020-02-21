@@ -95,7 +95,7 @@ void Command::shuffleStatement()
 
 void Command::Delete()
 {
-	if(counter>2 && stoi(string(vector[2])) >= (counter-2))
+	if(counter>2 && stoi(string(vector[2])) <= (counter-2))
 	{
 		int location = stoi(string(vector[2]));
 		for(int i=3; i<counter ; i++)
@@ -163,13 +163,13 @@ void Command::Execute()
 		this->shuffleWord();
 	else if(temp == "shuffleStatement")
 		this->shuffleStatement();
-	else if(temp == "Delete")
+	else if(temp == "delete")
 		this->Delete();
-	else if(temp == "Middle")
+	else if(temp == "middle")
 		this->Middle();
-	else if(temp == "Add")
+	else if(temp == "add")
 		this->Add();
-	else if(temp == "Random")
+	else if(temp == "random")
 		this->Random();
 	else
 		cout << "Undefined Command" << endl;

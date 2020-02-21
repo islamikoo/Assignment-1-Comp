@@ -95,19 +95,26 @@ void Command::shuffleStatement()
 
 void Command::Delete()
 {
-	if(counter>2 && stoi(string(vector[2])) < (counter-2))
+	try
 	{
-		int location = stoi(string(vector[2]));
-		for(int i=3; i<counter ; i++)
+		int location = stoi(string(vector[2])) ;
+		if(counter>2 && location < (counter-2))
 		{
-			if(location+2 == i)
-				continue;
-			cout << vector[i] << " " ;
+			for(int i=3; i<counter ; i++)
+			{
+				if(location+2 == i)
+					continue;
+				cout << vector[i] << " " ;
+			}
+			cout << endl ;
 		}
-		cout << endl ;
+		else
+			cout << "Incorrect Number of Arguments" << endl;
 	}
-	else
-		cout << "Incorrect Number of Arguments" << endl;
+	catch(const exception&)
+	{
+		cout << "Incorrect Data Type" << endl;
+	}
 }
 
 void Command::Middle()
@@ -128,10 +135,17 @@ void Command::Add()
 {
 	if(counter>2)
 	{
-		int sum=0;
-		for(int i=2; i<counter ; i++)
-			sum += stoi(string(vector[i]));
-		cout << sum << endl ;
+		try
+		{
+			int sum=0;
+			for(int i=2; i<counter ; i++)
+				sum += stoi(string(vector[i]));
+			cout << sum << endl ;
+		}
+		catch(const exception&)
+		{
+			cout << "Incorrect Data Type" << endl;
+		}
 	}
 	else
 		cout << "Incorrect Number of Arguments" << endl;
@@ -141,10 +155,17 @@ void Command::Random()
 {
 	if(counter==6)
 	{
-		srand(stoi(string(vector[5])));
-		for(int i=0; i<stoi(string(vector[2])) ; i++)
-			cout << rand() % (stoi(string(vector[4] )) - stoi(string(vector[3])) + 1) + stoi(string(vector[3])) << " " ;
-		cout << endl ;
+		try
+		{
+			srand(stoi(string(vector[5])));
+			for(int i=0; i<stoi(string(vector[2])) ; i++)
+				cout << rand() % (stoi(string(vector[4] )) - stoi(string(vector[3])) + 1) + stoi(string(vector[3])) << " " ;
+			cout << endl ;
+		}
+		catch(const exception&)
+		{
+			cout << "Incorrect Data Type" << endl;
+		}
 	}
 	else
 		cout << "Incorrect Number of Arguments" << endl;

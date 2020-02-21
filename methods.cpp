@@ -57,7 +57,7 @@ void Command::upper()
 
 void Command::shuffleWord()
 {
-	if(counter == 2)
+	if(counter == 3)
 	{
 		int j=0;
 		while(vector[2][j] != '\0' && vector[2][j+1] != '\0')
@@ -182,7 +182,7 @@ void Command::Execute()
 			this->reverse();
 		else if(temp == "upper")
 			this->upper();
-		else if(temp == "shuffleWord")
+		else if(temp == "shuffle")
 			this->shuffleWord();
 		else if(temp == "shuffleStatement")
 			this->shuffleStatement();

@@ -8,10 +8,10 @@
     {
     	int x = 0;
     	for (int i=0; i<=5; i++)
-    					   {
-    					   		cout << x << endl;
-    					   		x++;
-    					   }
+    	{
+    		cout << x << endl;
+    		x++;
+    	  }
     	return 0;
     }
 

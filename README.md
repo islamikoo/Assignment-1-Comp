@@ -11,7 +11,7 @@
     	{
     		cout << x << endl;
     		x++;
-    	  }
+    	}
     	return 0;
     }
 
